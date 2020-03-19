@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)https://maven-pub.mfms.ru/repository/maven-public/com/mfms/ios/push-lite/2.4.15/readme.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title></title>
+    <link href="./readme_files/css" rel="stylesheet">
+    <style>
+html {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f4f4f4;
+  margin: 12px 0 20px;
+  padding: 0;
+  box-sizing: border-box; }
+
+.body-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 2px 28px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px 0 rgba(51, 51, 51, 0.08), 0 0 2px 0 rgba(51, 51, 51, 0.08);
+  box-shadow: 0 0 2px 0 rgba(51, 51, 51, 0.08), 0 0 2px 0 rgba(51, 51, 51, 0.08);
+  padding-bottom: 100px; }
+  .body-wrapper h1 {
+    font: 300 32px "Open Sans",sans-serif;
+    color: #008AFF; }
+  .body-wrapper h2 {
+    font: 300 26px "Open Sans",sans-serif;
+    color: #008AFF; }
+  .body-wrapper h3 {
+    font: 400 18px "Open Sans",sans-serif;
+    color: #555;
+    text-decoration: underline; }
+  .body-wrapper ul, .body-wrapper ul li {
+    font: 200 16px "Open Sans",sans-serif;
+    line-height: 28px;
+    margin: 0; }
+  .body-wrapper p {
+    font: 200 16px "Open Sans",sans-serif;
+    line-height: 28px; }
+  .body-wrapper p.note {
+    font: 200 14px "Open Sans",sans-serif;
+    line-height: 20px; }
+  .body-wrapper p {
+    margin-top: 4px;
+    margin-bottom: 4px; }
+  .body-wrapper .code-block {
+    font: 200 16px "Open Sans",sans-serif;
+    background: #eee;
+    padding: 2px 8px;
+    margin: 0 0 0 -8px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px; }
+  .body-wrapper b {
+    font-weight: 400; }
+  .body-wrapper .code-text {
+    font: 400 16px "Open Sans",sans-serif;
+    background: #eee;
+    padding: 2px 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px; }
+  .body-wrapper .deprecated {
+    color: #e0a984; }
+  .body-wrapper .build-item {
+    border: 2px solid #ccc;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    padding: 16px 16px;
+    margin-bottom: 20px; }
+  .body-wrapper .options-table {
+    margin: 8px 0;
+    border-collapse: collapse; }
+    .body-wrapper .options-table tr td {
+      border: 1px dashed #eee;
+      padding: 4px 8px;
+      min-width: 180px; }
+    </style>
+</head>
+<body>
+<div class="body-wrapper">
+    <h1>MFMSPushSDK</h1>
+<!--Main info table-->
+
+    <table class="options-table">
+        <tbody><tr>
+            <td>Версия библиотеки</td>
+            <td>2.4.15</td>
+        </tr>
+        <tr>
+            <td>Дата сборки</td>
+            <td>2018-11-16_15-03-56</td>
+        </tr>
+        <tr>
+            <td>Версия XCode</td>
+            <td>Xcode 10.1 Build version 10B61</td>
+        </tr>
+        <tr>
+            <td>Репозиторий</td>
+            <td><a href="https://maven-pub.mfms.ru/service/rest/repository/browse/maven-public/com/mfms/ios/push-lite/2.4.15">Перейти</a></td>
+        </tr>
+    </tbody></table>
+
+    <br>
+    <p>Библиотека <span class="code-text">MFMSPushSDK</span> предназначена для интеграции в iOS-приложение функционала по взаимодействию с Push-платформой</p>
+
+    <h2>Виды сборок</h2>
+
+<!--Push Lite Info-->
+
+    <div class="build-item">
+        <div class="name">MFMSPushLite</div>
+        <p> Включает в себя основной функционал, достаточный для 99% случаев</p>
+        <div class="info">
+            <p>Предназначена для интеграции в основное приложение(AppDelegate) в случаях:</p>
+            <ul>
+                <li>при использовании Remote-пушей c использованием NotificationExtension</li>
+                <li>при использовании Remote-пушей без NotificationExtension</li>
+                <li>при использовании VOIP-пушей</li>
+            </ul>
+            <p>
+                <span class="code-text">Написана на Swift.</span>
+                <span class="code-text">Рекоммендуется к интеграции.</span>
+                <span class="code-text">Версия Swift: 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)</span>
+            </p>
+        </div>
+
+        <p><u>Подключение через CocoaPods</u></p>
+        <div class="code-block">
+            pod 'MFMSPushLite', :podspec =&gt; 'https://maven-pub.mfms.ru/repository/maven-public/com/mfms/ios/push-lite/2.4.15/MFMSPushLite.podspec'
+        </div>
+        <p class="note"><b>Примечание: </b>При подключении через CocoaPods будет использована Universal-сборка(iOS + Simulator). Для выкладки в AppStore необходимо добавить скрипт (см. ниже).</p>
+
+        <p><u>Подключение с использованием архива</u></p>
+        <p>Для интеграции в проект скачайте архив c библиотекой и подключите к проекту фреймворк <i>MFMSPushLite.framework</i></p>
+        <ul>
+            <li><a href="https://maven-pub.mfms.ru/repository/maven-public/com/mfms/ios/push-lite/2.4.15/mfms-push-lite-2.4.15-universal.zip">mfms-push-lite-2.4.15-universal.zip</a> - universal сборка</li>
+            <li><a href="https://maven-pub.mfms.ru/repository/maven-public/com/mfms/ios/push-lite/2.4.15/mfms-push-lite-2.4.15-iosonly.zip">mfms-push-lite-2.4.15-iosonly.zip</a> - сборка только для iOS (Simulator не поддерживается)</li>
+        </ul>
+
+    </div>
+
+<!--Script info-->
+    <h2>Особенности публикации в AppStore при использовании swift-сборок</h2>
+    <p> Библиотека <span class="code-text">MFMSPushSDK</span> поставляется в двух вариантах архитектур: <span class="code-text">ios_only</span> и <span class="code-text">universal</span>.
+    </p><ul>
+        <li><p> Сборки <span class="code-text">ios_only</span> подходят для выливки в AppStore, но не подходят для тестирования на симуляторе.</p></li>
+        <li><p> Сборки <span class="code-text">universal</span> будут работать и на девайсе и на симуляторе, но при выливке в AppStore появится ошибка про лишние архитектуры (x86), сборку с которыми нельзя отправлять в AppStore:</p>
+        <span class="code-text">
+            ERROR ITMS-90087: "Unsupported Architectures. The executable for TestAdvisaPushLibs.app/Frameworks/PushServerAPI.framework contains unsupported architectures '[x86_64, i386]'."
+        </span>
+        </li>
+    </ul>
+
+
+    <p> <u>Для решения этой проблемы можно пойти двумя путями: </u></p><p>
+    </p><ul>
+        <li><p>Для тестирования использовать <span class="code-text">universal</span>-сборку, а для отправки в AppStore - сборку <span class="code-text">ios_only</span></p></li>
+        <li><p>Всегда использовать <span class="code-text">universal</span>-сборку, но при этом добавить в настройки проекта скрипт, который с помощью стандартной утилиты lipo на этапе сборки проекта выпиливает из фреймворка, который попадет в сборку, все ненужные архитектуры.
+            Для этого нужно добавить в <span class="code-text">Build Phases</span> sh-скрипт, который удаляет лишние архитектуры из всех фреймворков, которые он найдет в проекте.</p>
+            <p><b>Важно:</b> необходимо добавить этот скрипт после шага <span class="code-text">Embed frameworks</span>, иначе скрипт работать не будет.</p>
+            <p><b>Код скрипта:</b></p>
+            <div class="code-block"><pre style="font-size: 12px;">APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
+
+# This script loops through the frameworks embedded in the application and
+# removes unused architectures.
+find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
+do
+    FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
+    FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
+    echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
+
+    EXTRACTED_ARCHS=()
+
+    for ARCH in $ARCHS
+    do
+        echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
+        lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
+        EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
+    done
+
+    echo "Merging extracted architectures: ${ARCHS}"
+    lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
+    rm "${EXTRACTED_ARCHS[@]}"
+
+    echo "Replacing original executable with thinned version"
+    rm "$FRAMEWORK_EXECUTABLE_PATH"
+    mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
+
+done
+            </pre></div>
+        </li>
+    </ul>
+
+</div>
+
+
+</body></html>
